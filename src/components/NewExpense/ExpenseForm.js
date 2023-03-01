@@ -1,6 +1,5 @@
 import {useState} from "react";
 import "./ExpenseForm.css";
-import Button from "@mui/material/Button";
 
 const ExpenseForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState("");
@@ -68,14 +67,12 @@ const ExpenseForm = (props) => {
                 </div>
             </div>
             <div className="new-expense__actions">
-                <Button
+                <button type='button' onClick={props.onCancel}>Cancel</button>
+                <button
                     type="submit"
-                    variant="contained"
-                    size="small"
-                    color="secondary"
                 >
                     Add Expense
-                </Button>
+                </button>
             </div>
         </form>
     );

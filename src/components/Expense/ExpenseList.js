@@ -20,7 +20,7 @@ function ExpenseList({expenses}) {
         <div>
             <Card className="expenses">
                 <ExpenseFilter selected={filteredYear} onChangeFilter={filterChangeHandler}/>
-                <ExpenseTable items={filteredExpenses} />
+                <ExpenseTable items={filteredExpenses}/>
 
             </Card>
 
